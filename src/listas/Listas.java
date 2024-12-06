@@ -260,6 +260,7 @@ public class Listas extends JFrame {
 
                     listaEnlazada.agregarCancion(titulo, artista, coverPath, time, path);
                     JOptionPane.showMessageDialog(añadir, "Song added: " + titulo + " by " + artista);
+                    añadir.dispose();
                 }
             });
 
