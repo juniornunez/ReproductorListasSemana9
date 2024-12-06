@@ -6,27 +6,13 @@ package listas;
 
 /**
  *
- * @author Hp
- */
-public class Nodo {
-    
-    String nombreCancion;
-    String nombreVisible;
-    String artista;
-    String duracion;
-    String tipoMusica;
-    String imagen;
+ * @author Laura Sabillon
+ */public class Nodo {
+    Musica musica; 
     Nodo siguiente;
 
-    public Nodo(String nombreCancion, String nombreVisible, String artista, String duracion, String tipoMusica, String imagen) {
-        this.nombreCancion = nombreCancion;
-        this.nombreVisible = nombreVisible;
-        this.artista = artista;
-        this.duracion = duracion;
-        this.tipoMusica = tipoMusica;
-        this.imagen = imagen;
+    public Nodo(Musica musica) {
+        this.musica = musica;
         this.siguiente = null;
     }
 }
-
-

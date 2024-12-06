@@ -6,13 +6,15 @@ package listas;
 
 /**
  *
- * @author Junior Nuñes
+ * @author Laura Sabillon
  */
 public class ListaEnlazada {
+
     Nodo cabeza;
 
-    public void agregarCancion(String nombreCancion, String nombreVisible, String artista, String duracion, String tipoMusica, String imagen) {
-        Nodo nuevo = new Nodo(nombreCancion, nombreVisible, artista, duracion, tipoMusica, imagen);
+    public void agregarCancion(String titulo, String artista, String coverPath, int duracion, String ruta) {
+        Musica nuevaCancion = new Musica(titulo, artista, coverPath, duracion, ruta);
+        Nodo nuevo = new Nodo(nuevaCancion);
         if (cabeza == null) {
             cabeza = nuevo;
         } else {
@@ -34,4 +36,3 @@ public class ListaEnlazada {
         return temp;
     }
 }
-    
